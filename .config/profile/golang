@@ -1,0 +1,7 @@
+GOROOT="$HOME/.local/share/golang"
+export GOROOT
+GOPATH="$HOME"
+export GOPATH
+PATH="$HOME/.local/share/golang/bin:$PATH"
+export PATH
+
