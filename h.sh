@@ -11,7 +11,7 @@
 #       'bundle-out'.
 # Additionally, for bundle-in and bundle-out actions the HSH_BUNDLE_ROOT is set
 # to the bundle content root.
-case "$HSH_ACTION"; in
+case "$HSH_ACTION" in
     clone|bundle-out)
         [ -d "$HSH_ROOT/.local/share/golang" ] || mkdir -p "$HSH_ROOT/.local/share/golang"
         wget -o go.tar.gz "https://dl.google.com/go/$(curl https://golang.org/VERSION?m=text).linux-amd64.tar.gz"
